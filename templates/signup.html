@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+  <title>{{ title3 }}</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+  <style>
+  body{
+    background-color: #f4f4f4;
+  }
+  </style>
+  <!-- Custom styles for this template -->
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="/">GymTrack</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytracking">My Tracking</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/login">Sign Up/Log In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div class="container" style="padding-top: 75px">
+      <h1 style="text-align: center">Sign up today to track your progress!</h1>
+
+      <br />
+
+      <hr class="featurette-divider">
+
+      <br />
+
+      <h2>Sign Up Below:</h2>
+
+      <br />
+
+      {% if error %}
+        <p>{{ error }}</p>
+      {% endif %}
+
+      {% if msg %}
+        <h2>{{ msg }}</h2>
+      {% endif %}
+
+      <form action="/signup" method="POST">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" name="first_name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" name="last_name">
+          </div>
+        </div>
+        <br />
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email Address" name="email">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone Number" name="phone_number">
+          </div>
+        </div>
+        <br />
+        <div class="form-row">
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password" name="password">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
+          </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+
+      <br />
+
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 GymTrack</p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+  </html>

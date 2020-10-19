@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+  <title>{{ title }}</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+  <!-- Custom styles for this template -->
+  <link type="text/css" rel="stylesheet" href="/static/css/style.css​​​">
+  <style>
+  header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(static/images/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(static/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  body{
+    background-color: #f4f4f4;
+  }
+  h1{
+    color: #00BFFF;
+  }
+  #head{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #pic1,
+  #pic2,
+  #pic3{
+    margin-bottom:30px;
+    margin-left: 60px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  .contact{
+    text-align: center;
+  }
+  #emailUs{
+    margin-left: 44.5%
+  }
+
+  @media only screen and (max-width: 767px) {
+    h1{font-size:180%;
+      text-align: center;
+    }
+    #pic1,
+    #pic2,
+    #pic3{
+      margin-bottom:30px;
+      margin-left: 100px;
+    }
+    #emailUs{
+      margin-left: 37%
+    }
+  }
+  </style>
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="/">GymTrack</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytracking">My Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Sign Up/Log In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="head">
+      <h1>Start tracking your exercise today!</h1>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" style="padding-top:40px">
+      <!-- Three columns of text below the carousel -->
+      <div class="row" style="padding-top:40px">
+        <div class="col-lg-4">
+          <img id="pic1" class="bd-placeholder-img rounded-circle" width="250" height="250" src="static/images/notepad.jpg"></img>
+          <br />
+          <h2 style="text-align: center;">Track</h2>
+          <p style="text-align: center;">Track your every exercise on the go without using any paper or pen</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img id="pic2" class="bd-placeholder-img rounded-circle" width="250" height="250" src="static/images/record.jpg"></img>
+          <br />
+          <h2 style="text-align: center;">Create fitness goals!</h2>
+          <p style="text-align: center;">Create fitness goals and flourish into your new body that you always desired</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img id="pic3" class="bd-placeholder-img rounded-circle" width="250" height="250" src="static/images/globe.jpg"></img>
+          <br />
+          <h2 style="text-align: center;">Access globally!</h2>
+          <p style="text-align: center;">Going abroad? Do not worry your records can be accessed from anywhere around the world!</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <br />
+
+      <hr class="featurette-divider">
+      <br />
+      <h2 class="contact">Contact Us!</h2>
+      <br />
+      <a type="submit" href="mailto:hamzano1@hotmail.co.uk" class="btn btn-lg btn-primary" id="emailUs">Email Us</a>
+      <br />
+      <br />
+      <br />
+      <hr class="featurette-divider">
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 GymTrack</p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
+  </html>
