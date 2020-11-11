@@ -5,6 +5,11 @@ import os
 mydb = mysql.connector.connect(host='localhost', user='codeworked', passwd='elephant', database='sample', auth_plugin='mysql_native_password')
 
 cursor = mydb.cursor()
+create_table ="""
+CREATE TABLE users(id INT NOT NULL AUTO_INCREMENT, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL, phone VARCHAR(20) NOT NULL, password VARCHAR(50) NOT NULL, date DATE, PRIMARY KEY ( id ) );
+CREATE TABLE gym(id INT NOT NULL AUTO_INCREMENT, date VARCHAR(20), exercises VARCHAR(20) NOT NULL, weight VARCHAR(20) NOT NULL, sets VARCHAR(20) NOT NULL, reps VARCHAR(20) NOT NULL, time VARCHAR(20) NOT NULL, PRIMARY KEY ( id ) );
+"""
+cursor.execute(create_table)
 
 app = Flask(__name__)
 app.secret_key = os.urandom(30)
